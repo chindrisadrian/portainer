@@ -32,6 +32,44 @@
 			]
 		},
 		{
+			"title":"Plex",
+			"description":"Plex organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices.",
+			"logo":"https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/plex.png",
+			"env":[
+				{
+					"label":"PUID",
+					"name":"PUID",
+					"default":"1000",
+					"preset":true
+				},
+				{
+					"label":"PGID",
+					"name":"PGID",
+					"default":"100",
+					"preset":true
+				}
+			],
+			"image":"lscr.io/linuxserver/plex:latest",
+			"name":"Plex",
+			"platform":"linux",
+			"restart_policy":"unless-stopped",
+			"type":1,
+			"volumes":[
+				{
+					"bind":"/portainer/Files/AppData/Config/Plex",
+					"container":"/config"
+				},
+				{
+					"bind":"/downloads",
+					"container":"/movies"
+				},
+				{
+					"bind":"/downloads",
+					"container":"/tv"
+				}
+			]
+		},
+		{
 			"title":"NGINX Proxy Manager",
 			"description":"Expose your services easily and securely.",
 			"logo":"https://raw.githubusercontent.com/univrs-cloud/portainer/main/images/nginx-proxy-manager.png",
