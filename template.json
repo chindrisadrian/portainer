@@ -61,8 +61,7 @@
 				},
 				{
 					"bind":"/downloads",
-					"container":"/movies",
-					"readonly":true
+					"container":"/movies"
 				}
 			]
 		},
