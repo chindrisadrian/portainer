@@ -2,7 +2,7 @@
 	"version":"2",
 	"templates":[
 		{
-			"title":"ddclient",
+			"title":"DDclient",
 			"description":"A client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider.",
 			"logo":"https://raw.githubusercontent.com/univrs-cloud/portainer/main/images/ddns-updater.png",
 			"env":[
@@ -92,30 +92,6 @@
 				"stackfile":"stack/authelia.yaml"
 			},
 			"type":3
-		},
-		{
-			"title":"Homepage",
-			"description":"A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.",
-			"logo":"https://raw.githubusercontent.com/univrs-cloud/portainer/main/images/homepage.png",
-			"image":"ghcr.io/gethomepage/homepage:latest",
-			"name":"homepage",
-			"platform":"linux",
-			"ports":[
-				"7575:3000/tcp"
-			],
-			"restart_policy":"unless-stopped",
-			"type":1,
-			"volumes":[
-				{
-					"bind":"/var/run/docker.sock",
-					"container":"/var/run/docker.sock",
-					"readonly":true
-				},
-				{
-					"bind":"/portainer/Files/AppData/Config/homepage",
-					"container":"/app/config"
-				}
-			]
 		},
 		{
 			"title":"Pi-Hole + Unbound",

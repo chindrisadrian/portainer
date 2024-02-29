@@ -29,7 +29,7 @@ services:
     dns:
       - 127.0.0.1
     networks:
-      app_net:
+      virgo:
         ipv4_address: 172.30.0.4
     cap_add:
       - NET_ADMIN
@@ -46,10 +46,5 @@ services:
     restart: unless-stopped
 
 networks:
-  app_net:
-    name: app_net
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.30.0.0/16
-          gateway: 172.30.0.1
+  virgo:
+    external: true

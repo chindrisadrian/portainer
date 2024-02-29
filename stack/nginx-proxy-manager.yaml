@@ -16,15 +16,10 @@ services:
       - "81:81/tcp"
       - "443:443/tcp"
     networks:
-      app_net:
+      virgo:
         ipv4_address: 172.30.0.3
     restart: unless-stopped
 
 networks:
-  app_net:
-    name: app_net
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.30.0.0/16
-          gateway: 172.30.0.1
+  virgo:
+    external: true
