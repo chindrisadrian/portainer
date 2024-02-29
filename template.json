@@ -68,7 +68,7 @@
 				},
 				{
 					"bind": "/downloads",
-					"container": "/data"
+					"container": "/movies"
 				}
 			]
 		},
