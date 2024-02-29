@@ -50,13 +50,13 @@
 				}
 			],
 			"image":"lscr.io/linuxserver/plex:latest",
-			"name":"Plex",
+			"name":"plex",
 			"platform":"linux",
 			"restart_policy":"unless-stopped",
 			"type":1,
 			"volumes":[
 				{
-					"bind":"/portainer/Files/AppData/Config/Plex",
+					"bind":"/portainer/Files/AppData/Config/plex",
 					"container":"/config"
 				},
 				{
