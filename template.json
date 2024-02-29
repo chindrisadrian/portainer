@@ -63,11 +63,6 @@
 					"bind":"/downloads",
 					"container":"/movies",
 					"readonly":true
-				},
-				{
-					"bind":"/downloads",
-					"container":"/tv",
-					"readonly":true
 				}
 			]
 		},
