@@ -47,6 +47,12 @@
 					"name":"PGID",
 					"default":"100",
 					"preset":true
+				},
+				{
+					"label":"VERSION",
+					"name":"VERSION",
+					"default":"docker",
+					"preset":true
 				}
 			],
 			"image":"plexinc/pms-docker:latest",
