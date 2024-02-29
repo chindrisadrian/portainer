@@ -61,11 +61,13 @@
 				},
 				{
 					"bind":"/downloads",
-					"container":"/movies"
+					"container":"/movies",
+					"readonly":true
 				},
 				{
 					"bind":"/downloads",
-					"container":"/tv"
+					"container":"/tv",
+					"readonly":true
 				}
 			]
 		},
